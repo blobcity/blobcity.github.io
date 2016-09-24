@@ -1,15 +1,15 @@
 ---
-title: Introduction
+title: Overview
 sidebar: mydoc_sidebar
 permalink: mydoc_introduction.html
 folder: mydoc
 ---
 
-## A 30 min Overview
+## What is BlobCity
 
 BlobCity is a multi-model database designed for real-time and low-latency analytics.
 
-            multi-model = SQL + JSON + XML + CSV + Plain Text
+    multi-model = SQL + JSON + XML + CSV + Plain Text
 
 Storing and processing diverse data is made easily possible with BlobCity. Most analytic products today are required to collectively analyse data of diverse natures. BlobCity is designed to offer real-time analytics over your diverse data.
 
@@ -39,6 +39,20 @@ BlobCity is a NoSQL distributed horizontally, infinitesimally and linearly scala
 
 The table below covers the features of BlobCity DB at a high level. A comparison is intentionally not provided as part of this book, but the features are indicative of the wide variety of uses of the storage technology that are suitable for both applications that want an easy system, and enterprises that want state of the art security and control.
 
+Feature | Description
+--------|-----------|-----------
+Storage | Disk, In-memory and In-memory-non-durable.
+Storage Engine | Proprietary
+Consistency | Strongly consistent
+
+Durability | Highly durable, with synchronous data replication
+Querying | JDBC, ODBC, SQL, WebServices
+Partitioning Scheme | Automatic node health and load based data distribution
+Native Partioning | Yes
+Data Replication | Yes. Configurable to desired level of copies
+Automatic Replication | Yes
+Automatic Failover Management | Yes. No database downtime on single or multiple node failover
+Data Formats | Natively supports: * JSON documents * XML documents * CSV records and documents * SQL insert statements for data loading • Plain text records * Folder / File watch over text files
 
 ## Survey of features
 
