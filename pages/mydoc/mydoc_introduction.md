@@ -8,8 +8,7 @@ folder: mydoc
 ## What is BlobCity
 
 BlobCity is a multi-model database designed for real-time and low-latency analytics.
-
-    multi-model = SQL + JSON + XML + CSV + Plain Text
+{% include callout.html content="multi-model = SQL + JSON + XML + CSV + Plain Text" type="info" %} 
 
 Storing and processing diverse data is made easily possible with BlobCity. Most analytic products today are required to collectively analyse data of diverse natures. BlobCity is designed to offer real-time analytics over your diverse data.
 
