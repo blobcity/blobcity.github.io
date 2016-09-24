@@ -52,10 +52,7 @@ Data Replication | Yes. Configurable to desired level of copies
 Automatic Replication | Yes
 Automatic Failover Management | Yes. No database downtime on single or multiple node failover
 Data Formats | Natively supports: 
-            | * JSON documents 
-            * XML documents 
-            * CSV records and documents 
-            | * SQL insert statements for data loading • Plain text records * Folder / File watch over text files
+            
 
 ## Survey of features
 
