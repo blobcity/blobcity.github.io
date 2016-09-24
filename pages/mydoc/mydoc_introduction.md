@@ -40,7 +40,7 @@ BlobCity is a NoSQL distributed horizontally, infinitesimally and linearly scala
 The table below covers the features of BlobCity DB at a high level. A comparison is intentionally not provided as part of this book, but the features are indicative of the wide variety of uses of the storage technology that are suitable for both applications that want an easy system, and enterprises that want state of the art security and control.
 
 Feature | Description
---------|-----------|
+--------|-----------
 Storage | Disk, In-memory and In-memory-non-durable.
 Storage Engine | Proprietary
 Consistency | Strongly consistent
