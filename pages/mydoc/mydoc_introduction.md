@@ -53,7 +53,7 @@ In-memory Data Cubes | Yes. Proprietary algorithm that provides mathematical com
 Permission & Access Control | Exhaustive user authentication module, with comprehensive roles and privileges. Data access can be controlled all the way down to column level.
 Encryption | AES. Configurable number of iterations, and user defined encryption key
 Availability | As a hosted multi-tenant database as a service on most major cloud providers, and on-premise or dedicated cloud installations. Tested on Amazon Web Services, Microsoft Azure, Google Cloud Platform, IBM Softlayer, Digital Ocean and Exoscale.
-Distribution | [Docker](http://docker.com), [Vagrant](https://www.vagrantup.com/) and OS specific binaries
+Distribution | Docker, Vagrant and OS specific binaries
 
 ## Getting started
 
