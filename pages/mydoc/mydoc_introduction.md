@@ -5,7 +5,7 @@ permalink: mydoc_introduction.html
 folder: mydoc
 ---
 
-## What is BlobCity?
+## What is BlobCity
 
 BlobCity is a multi-model database designed for real-time and low-latency analytics.
 {% include callout.html content="multi-model = SQL + JSON + XML + CSV + Plain Text" type="info" %} 
