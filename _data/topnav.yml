@@ -12,8 +12,10 @@ topnav_dropdowns:
   folders:
     - title: Resources
       folderitems:
-        - title: Github Repo
-          external_url: https://github.com/tomjohnson1492/documentation-theme-jekyll
+         - title: Java Adapter
+           external_url: https://github.com/blobcity/db-java-adapter/tree/master/target
+#        - title: Github Repo
+#          external_url: https://github.com/tomjohnson1492/documentation-theme-jekyll
 #        - title: Jekyll Talk
 #          external_url: https://talk.jekyllrb.com
 #        - title: Jekyll documentation
@@ -25,7 +27,7 @@ topnav_dropdowns:
 #    - title: Products
 #      folderitems:
 #        - title: Jekyll Documentation Theme
-#          url: /mydoc_introduction.html
+#          url: /introduction.html
 #        - title: Product 1
 #          url: /p1_landing_page.html
 #        - title: Product 2

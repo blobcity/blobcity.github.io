@@ -128,7 +128,7 @@ entries:
       output: web, pdf
 
     - title: Introduction
-      url: /mydoc_introduction.html
+      url: /introduction.html
       output: web, pdf
 
     - title: Supported features
