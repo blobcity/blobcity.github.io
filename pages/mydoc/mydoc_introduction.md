@@ -42,13 +42,20 @@ Native Partioning | Yes
 Data Replication | Yes. Configurable to desired level of copies
 Automatic Replication | Yes
 Automatic Failover Management | Yes. No database downtime on single or multiple node failover
-Data Formats | Natively supports: <br/>JSON documents, <br/> XML documents, CSV records and documents, SQL insert statements for data loading, Plain text records, Folder / File watch over text files
-Indexing | <td align="left" markdown="1">Some more descriptive text. Here we have a Markdown-formatted list:
+Data Formats | Natively supports: <br/>• JSON documents <br/>• XML documents<br/>• CSV records and documents<br/>• SQL insert statements for data loading<br/>• Plain text records<br/>• Folder / File watch over text files
+Indexing | On Disk: BTree, Hashed, Timeseries<br/>In-memory: BTree, Timeseries, Geo-Spatial
+Geo-distributed Replication | Yes with configurable consistence. Both strong and delayed consistency supported
+Stored Procedures | Java & Scala language support.<br/> <br/>Type of stored procedures:<br/>• Simple Stored Procedures<br/>• Filters for distributed table scans<br/>• Triggers for formulas, data relationships and validations • Map-reduce
+Load External Libraries | External Java & Scala libraries loadable for use with stored procedures.
+Operating Systems | Linux, Mac OS X, Windows
+Hardware Requirements | Runs on commodity hardware. Minimum 4GB RAM and 2 core processor advised.
+In-memory Data Cubes | Yes. Proprietary algorithm that provides mathematical complexity of a cube for analytics, along with providing the ability to push operational
+workloads directly to the cube storage.
+Permission & Access Control | Exhaustive user authentication module, with comprehensive roles and privileges. Data access can be controlled all the way down to column level.
+Encryption | AES. Configurable number of iterations, and user defined encryption key
+Availability | As a hosted multi-tenant database as a service on most major cloud providers, and on-premise or dedicated cloud installations. Tested on Amazon Web Services, Microsoft Azure, Google Cloud Platform, IBM Softlayer, Digital Ocean and Exoscale.
+Distribution | [Docker](http://docker.com), [Vagrant](https://www.vagrantup.com/) and OS specific binaries
 
-* first item
-* second item
-* third item
-</td>
 ## Getting started
 
 To get started, see [Getting Started][index].
