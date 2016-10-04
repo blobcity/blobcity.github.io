@@ -1,5 +1,5 @@
 ---
-title: Getting started with the Documentation Theme for Jekyll
+title: BlobCity homepage
 keywords: sample homepage
 tags: [getting_started]
 sidebar: mydoc_sidebar
@@ -128,7 +128,7 @@ entries:
       output: web, pdf
 
     - title: Introduction
-      url: /mydoc_introduction.html
+      url: /introduction.html
       output: web, pdf
 
     - title: Supported features
@@ -140,7 +140,7 @@ entries:
       output: web, pdf
 
     - title: Support
-      url: /mydoc_support.html
+      url: /support.html
       output: web, pdf
 
   - title: Release Notes
