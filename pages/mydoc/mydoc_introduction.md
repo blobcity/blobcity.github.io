@@ -55,8 +55,4 @@ Encryption | AES. Configurable number of iterations, and user defined encryption
 Availability | As a hosted multi-tenant database as a service on most major cloud providers, and on-premise or dedicated cloud installations. Tested on Amazon Web Services, Microsoft Azure, Google Cloud Platform, IBM Softlayer, Digital Ocean and Exoscale.
 Distribution | Docker, Vagrant and OS specific binaries
 
-## Getting started
-
-To get started, see [Getting Started][index].
-
 {% include links.html %}

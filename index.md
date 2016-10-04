@@ -140,7 +140,7 @@ entries:
       output: web, pdf
 
     - title: Support
-      url: /mydoc_support.html
+      url: /support.html
       output: web, pdf
 
   - title: Release Notes
