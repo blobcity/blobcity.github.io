@@ -1,5 +1,5 @@
 ---
-title: BlobCity homepage
+title: Overview
 keywords: blobcity db
 tags: [getting_started]
 sidebar: mydoc_sidebar
