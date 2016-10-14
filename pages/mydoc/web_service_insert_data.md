@@ -7,7 +7,9 @@ folder: mydoc
 
 ## Inserting Data
 
-```json
+The data being inserted can be of any of the supported formats by BlobCity. The database does an automatic format interpretation for JSON, XML and SQL data types. All other data types are stored as plain text in string.
+
+```
 {
   "username" : "root",
   "password" : "root",
@@ -19,8 +21,6 @@ folder: mydoc
   } 
 }
 ```
-
-The data being inserted can be of any of the supported formats by BlobCity. The database does an automatic format interpretation for JSON, XML and SQL data types. All other data types are stored as plain text in string.
 
 The `data` key is mapped to a JSON array of String. This allows for multiple records to be inserted in a single call. The records in the JSON array can be heterogeneous formats. JSON data can be put as a JSON object into the JSON array, instead of a being putting as a JSON String into the array. Both JSON record as is and a string form of the JSON record is supported. All other records must be passed as their string equivalents.
 
