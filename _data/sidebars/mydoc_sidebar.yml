@@ -31,7 +31,7 @@ entries:
     - title: Introduction
       url: /introduction.html
       output: web, pdf
-    - title: Web Service Intercface
+    - title: Web Service Interface
       url: /web-service-interface.html
       output: web, pdf
 #    - title: Supported features

@@ -5,54 +5,105 @@ permalink: web-service-interface.html
 folder: mydoc
 ---
 
-## What is BlobCity??
+## Web Service Interface
 
-BlobCity is a multi-model database designed for real-time and low-latency analytics.
-{% include callout.html content="multi-model = SQL + JSON + XML + CSV + Plain Text" type="info" %} 
+Whether On-Cloud or On-Premise, the BlobCity Database can be fully used over a RESTful web service interface. Some of the language specific adapters themselves, communicate with the database over these REST interfaces. The REST support is very exhaustive and extends to every action that can be taken on the database.
 
-Storing and processing diverse data is made easily possible with BlobCity. Most analytic products today are required to collectively analyse data of diverse natures. BlobCity is designed to offer real-time analytics over your diverse data.
+#Cloud Connection Endpoint
+To connect to any cloud instance of BlobCity, the REST connection URL mentioned is
+```
+http://{data-centre-id}.db.blobcity.com/rest/bquery
+```
 
-The term multi-model refers to a wide variety of data formats. A product supporting more than one data format is termed multi-model. The formats supported by BlobCity are not exhaustive, but are definitely much more than those supported by other similar databases.
+The '{data-centre-id}' is the id of the data centre on which you are running your BlobCity instance. The id usually comprises of the major data centre provider code
+followed by the region code of the data centre. For connecting to AWS instance on US East (N. Virginia) the code would be aws-us-east-1 and the endpoint would be 'http://aws-
+us-east-1.db.blobcity.com/rest/bquery'
 
-Terms BlobCity, BlobCity DB and BlobCity Database are used interchangeably throughout the documentation, and mean the same.
+The complete list of upto date data centre codes can be found from the API details section on your cloud portal account. They are also mentioned in Appendix 3 for quick reference, but you should note that the list is ever changing, and the Appendix 3 may be outdated, by the time you are reading this.
 
-## When to use
+On-Premise Connection Endpoint
+The BlobCity RESTful end point on your location installation by default can be accessed as
+http://localhost:10111/rest/bquery
+http://{ip}:{port}/rest/bquery
 
-BlobCity Database is primarily designed to support analytical requirements of an application. Use in both real-time and low-latency analytics is best suited. If you need to analyse your transactional data at the speed of every transaction, you need a real-time analytics system. Example case could be ATM fraud detection, where your analytical algorithm needs to analyse possible fraudulent nature of an on-going ATM swipe, before the machine actually dispenses the cash.
+The default port is 10111 for the endpoint, but is changeable to a port of your choice.
 
-Unlike ATM’s not all systems need analytics at real-time. If you want to analyse stock market data of the previous day, compare it with a years trend and then take a position when the market opens next day, you need a system that can perform this analysis with low-latency to be able to complete analytics for all stock quotes before the markets re- open. Depending on the nature and complexity of the requirement, the term low-latency covers processing times from a few milliseconds to even several hours.
+The operation request is sent to this end point in the form of a JSON object for a POST call. The rest of the chapter focuses on the request and response formats for the various supported operations.
 
-The BlobCity database is extremely well suited for such analytical requirements. The product is fully ACID compliant and supports high volume of transactions without compromising on analytics speeds. The technical term for such a product is HTAP (Hybrid Transaction / Analytical Processing)1, whereby products that do real-time analytics, need to be able to handle both transaction and analytical processing, in order to process the real-time data at real-time. BlobCity is a very mature HTAP space and used by several application developers as the only database for their applications, supporting both transactions and analytical workloads.
+Generic Request Format
+Each request end point takes a JSON request data as a POST request. The JSON has a generic format across all query types and operations. At a high level the JSON formats are split into data format and management format. The data format is used for queries that operate on data such as data reading and data modification. The management format is suitable for managing the database, including schema management and system level management of users, nodes, backup amongst other items.
 
-## High Level Features
 
-BlobCity is a NoSQL distributed horizontally, infinitesimally and linearly scalable database. It is fully ACID compliant and takes concurrent transactional and analytical workloads. It supports data sharding, distributed querying, data replication and automated failover management. The data formats supported are diverse including JSON, XML, CSV, SQL and Plain Text. One can inject data into it, by an explicit insert query, or ask the database to automatically pickup data by monitoring various supported data stores.
+Generic Management Query JSON Request
 
-The table below covers the features of BlobCity DB at a high level. A comparison is intentionally not provided as part of this book, but the features are indicative of the wide variety of uses of the storage technology that are suitable for both applications that want an easy system, and enterprises that want state of the art security and control.
+{
+  "username" : "root",
+  "password" : "root",
+  "q" : "{query-type}",
+  "p" : {
+  } 
+}
 
-Feature | Description
---------|-----------|
-Storage | Disk, In-memory and In-memory-non-durable.
-Storage Engine | Proprietary
-Consistency | Strongly consistent
-Durability | Highly durable, with synchronous data replication
-Querying | JDBC, ODBC, SQL, WebServices
-Partitioning Scheme | Automatic node health and load based data distribution
-Native Partioning | Yes
-Data Replication | Yes. Configurable to desired level of copies
-Automatic Replication | Yes
-Automatic Failover Management | Yes. No database downtime on single or multiple node failover
-Data Formats | Natively supports: <br/>• JSON documents <br/>• XML documents<br/>• CSV records and documents<br/>• SQL insert statements for data loading<br/>• Plain text records<br/>• Folder / File watch over text files
-Indexing | On Disk: BTree, Hashed, Timeseries<br/>In-memory: BTree, Timeseries, Geo-Spatial
-Geo-distributed Replication | Yes with configurable consistence. Both strong and delayed consistency supported
-Stored Procedures | Java & Scala language support.<br/> <br/>Type of stored procedures:<br/>• Simple Stored Procedures<br/>• Filters for distributed table scans<br/>• Triggers for formulas, data relationships and validations • Map-reduce
-Load External Libraries | External Java & Scala libraries loadable for use with stored procedures.
-Operating Systems | Linux, Mac OS X, Windows
-Hardware Requirements | Runs on commodity hardware. Minimum 4GB RAM and 2 core processor advised.
-In-memory Data Cubes | Yes. Proprietary algorithm that provides mathematical complexity of a cube for analytics, along with providing the ability to push operational workloads directly to the cube storage.
-Permission & Access Control | Exhaustive user authentication module, with comprehensive roles and privileges. Data access can be controlled all the way down to column level.
-Encryption | AES. Configurable number of iterations, and user defined encryption key
-Availability | As a hosted multi-tenant database as a service on most major cloud providers, and on-premise or dedicated cloud installations. Tested on Amazon Web Services, Microsoft Azure, Google Cloud Platform, IBM Softlayer, Digital Ocean and Exoscale.
-Distribution | Docker, Vagrant and OS specific binaries
+The username and password of the user that will access the system needs to be always provided. The q parameter specifies the query code for the query. The p is a payload specifying the payload corresponding to the query code provided. If the payload does not abide by the format specifications required for the specific query code, an error will be thrown.
+
+For all management queries, the only thing that will change per query is the payload that is sent for the corresponding query type. The payload is a JSON object within the primary JSON object, and should be readable by the database as a sub JSON to prevent an error.
+
+Generic Data Query JSON Request
+
+{
+  "username" : "root",
+  "password" : "root",
+  "ds" : "data-store-name",
+  "c" : "collection-name"
+  "q" : "{query-type}",
+  "p" : {
+  } 
+}
+
+The additional mandatory parameters for any data related operations include the name of the data store and name of the collection on which the operation is to be performed. If the query type is not a data query, the ds and c parameters will be ignored from request processing. The payload in these types of requests, typically will contain data or collection schema.
+
+In some exception data queries that span across tables, the collection name attribute may be skipped. A join query that spans multiple takes needs to be executed as a SQL query for which the collection name should not be specified as the query is not limited to a single collection. The data store name however needs to be provided for all data queries.
+
+It is important to remember here, that no query can span across collections in two separate data stores. All queries, no matter how many collections they span, will have to operate under a single specified datastore.
+
+Generic Response Format
+{
+  "ack" : "1",
+  "time" : 1000,
+  "p" : {
+  }
+}
+
+The response format contains an acknowledgement stating whether the response is a success response or an error response. An ack value of 1 indicates a success response, while an ack value of 0 indicates an error response.
+
+The response always contains the time in milli seconds that the request took to process on the database. These values are measured between request registration and response generation at the database level. Network latencies are not counted in this time, so it is a good enough rough measure of the performance delivered by the BlobCity cluster for the specific request. This value is not a benchmark, but provided for simple study purpose.
+
+Each success response has only an associated payload that contains information relevant to the response. The payload can be either a JSON object or a JSON array depending on the type of the query against which this response is produced.
+
+An error response
+
+{
+  "ack" : "0",
+  "code" : "error-code",
+  "message" : "error description message",
+}
+
+The error response have an ack value of 0 and in addition specifics the error code and a message that describes the error in a humanly readable manner. The message may contain additional information that allows better diagnosis of the problem. The complete list of error codes are listed in Appendix 2
+
+Inserting Data
+{
+  "username" : "root",
+  "password" : "root",
+  "ds" : "datastore1",
+  "c" : "collection1",
+  "q" : "insert",
+  "p" : {
+    "data" : ["XML","JSON",{"key":"json"},"Text"]
+  } 
+}
+
+The data being inserted can be of any of the supported formats by BlobCity. The database does an automatic format interpretation for JSON, XML and SQL data types. All other data types are stored as plain text in string.
+
+The data key is mapped to a JSON array of String. This allows for multiple records to be inserted in a single call. The records in the JSON array can be heterogeneous formats. JSON data can be put as a JSON object into the JSON array, instead of a being putting as a JSON String into the array. Both JSON record as is and a string form of the JSON record is supported. All other records must be passed as their string equivalents.
 
 {% include links.html %}
