@@ -24,6 +24,7 @@ The complete list of upto date data centre codes can be found from the API detai
 
 ## On-Premise Connection Endpoint
 The BlobCity RESTful end point on your location installation by default can be accessed as
+
 `http://localhost:10111/rest/bquery`
 
 `http://{ip}:{port}/rest/bquery`
@@ -130,6 +131,6 @@ The `data` key is mapped to a JSON array of String. This allows for multiple rec
 
 The format of data can be explicitly specified by adding the `type` parameter within the payload. This forces all data within the array to be of the specified type. Records that are not of the specified type will be skipped from the insert operation, while other records which are of the correct format will be inserted.
 The supposed data formats as part of the type parameter are `json`, `xml`, `sql`, `csv`, `text`, `auto`. The `auto` type allows for heterogeneous data types within the array and requests for an automatic type detection of the data. The type parameter is checked in a case insensitive manner, and not specifying a type parameter default behaviour to same as specifying a type parameter of auto.
-For `sql` type data only `INSERT INTO` SQL commands are interpreted. The data specified must be a SQL query string corresponding to a valid INSERT INTO SQL command.
+For `sql` type data only `INSERT INTO` SQL commands are interpreted. The data specified must be a SQL query string corresponding to a valid {% highlight sql %} INSERT INTO {% endhighlight %}SQL command.
 
 {% include links.html %}
