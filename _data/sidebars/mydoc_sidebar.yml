@@ -47,14 +47,6 @@ entries:
   - title: Web Services
     output: web, pdf
     folderitems:
-    - title:
-      url: /titlepage
-      output: pdf
-      type: frontmatter
-    - title:
-      url: /tocpage
-      output: pdf
-      type: frontmatter
         
     - title: Web Service Interface
       url: /web-service-interface.html
