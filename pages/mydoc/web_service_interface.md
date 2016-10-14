@@ -122,7 +122,7 @@ The `data` key is mapped to a JSON array of String. This allows for multiple rec
 
 **Explicitly specifying data format**
 
-```
+```json
 "p" : {
     "type" : "csv",
     "data" : ["val1,val2","val3,val4"]
@@ -158,7 +158,7 @@ The `ids` of all records are also returned back. BlobCity by default produces an
     "status" : [1,0,1,1],
     "ids" : ["id1","id2","id3","id4"],
     ...
-}
+ }
 ```
 
 {% include links.html %}
