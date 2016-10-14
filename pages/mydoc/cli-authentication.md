@@ -27,15 +27,4 @@ All operations performed on the CLI are checked against the logged-in user to en
 
 The root user by default has full permissions on the database. For the remainder of this chapter we will assume that all commands are fired by the root user with full permission. For the sake of brevity, we will not show the login process for the beginning of each operation and assume that the user is already successfully authenticated into the CLI and the CLI is ready for taking commands.
 
-## Command Format
-All CLI requests start with a command code. The command code instructs the database of the operation the user wishes to perform as part of that request. Each support operation has a unique command code. An example command is shown below.
-```
-blobcity>create-ds datastore1
-```
-
-In the above command `create-ds` is the command code and `datastore1` is the command parameter. All commands need to always start with a valid command code. `datastore1` is a parameter supplied to the create-ds command, and the parameter formats varying from command to command. This particular command creates a new datastore with the specified name of datastore1.
-
-The `blobcity>` shown at the beginning of the command is actually not typed by the user. This is displayed by default by the CLI interface, to indicate to the user that the user is
-successfully logged into the CLI and the CLI is ready to accept a new command.
-
 {% include links.html %}
