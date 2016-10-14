@@ -122,7 +122,7 @@ The `data` key is mapped to a JSON array of String. This allows for multiple rec
 
 **Explicitly specifying data format**
 
-```json-doc
+```
 "p" : {
     "type" : "csv",
     "data" : ["val1,val2","val3,val4"]
@@ -153,7 +153,7 @@ The response throws out the `status` for each item that was attempted to be inse
 
 The `ids` of all records are also returned back. BlobCity by default produces an auto generated record id, unless one is specified as a `_id` field in the data being inserted. Assuming the record does not specify any `_id`, a blank value is returned for each failed record, while the internally auto generated `_id` is provided for all successfully inserted records. For a record that explicitly specifies an `_id`, but fails in inserted due to some user configured condition or formula restriction, the specified `_id` will be provided in the response along with the status of `0` for the corresponding record. A sample payload for one failed record with a manually specified `_id` in the request is shown below.
 
-```
+```json
 "p" : {
     "status" : [1,0,1,1],
     "ids" : ["id1","id2","id3","id4"],

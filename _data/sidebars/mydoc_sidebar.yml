@@ -31,9 +31,7 @@ entries:
     - title: Introduction
       url: /introduction.html
       output: web, pdf
-    - title: Web Service Interface
-      url: /web-service-interface.html
-      output: web, pdf
+    
 #    - title: Supported features
 #      url: /mydoc_supported_features.html
 #      output: web, pdf
@@ -44,7 +42,11 @@ entries:
 
     - title: Support
       url: /support.html
-      output: web, pdf
+      output: web, pdf      
+      
+- title: Web Service Interface
+  url: /web-service-interface.html
+  output: web, pdf
 
 #  - title: Release Notes
 #    output: web, pdf
