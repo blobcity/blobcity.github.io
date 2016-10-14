@@ -51,6 +51,16 @@ entries:
     - title: Web Service Interface
       url: /web-service-interface.html
       output: web, pdf
+    - title: Insert Data
+      url: /insert-data.html
+      output: web, pdf
+    - title: Load Data
+      url: /load-data.html
+      output: web, pdf
+    - title: Simple Search
+      url: /simple-search.html
+      output: web, pdf
+      
 #  - title: Release Notes
 #    output: web, pdf
 #    folderitems:
