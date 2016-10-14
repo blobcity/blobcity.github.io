@@ -1,7 +1,7 @@
 ---
 title: Simple Search
 sidebar: mydoc_sidebar
-permalink: simple_search.html
+permalink: simple-search.html
 folder: mydoc
 ---
 
