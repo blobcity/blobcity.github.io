@@ -1,7 +1,7 @@
 ---
-title: Web Service Interface
+title: Simple Search
 sidebar: mydoc_sidebar
-permalink: web-service-interface.html
+permalink: simple_search.html
 folder: mydoc
 ---
 

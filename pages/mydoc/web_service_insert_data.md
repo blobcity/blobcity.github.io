@@ -1,7 +1,7 @@
 ---
-title: Web Service Interface
+title: Insert Data
 sidebar: mydoc_sidebar
-permalink: web-service-interface.html
+permalink: insert-data.html
 folder: mydoc
 ---
 

@@ -1,7 +1,7 @@
 ---
-title: Web Service Interface
+title: Load Data
 sidebar: mydoc_sidebar
-permalink: web-service-interface.html
+permalink: load-data.html
 folder: mydoc
 ---
 
