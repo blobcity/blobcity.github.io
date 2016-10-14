@@ -44,10 +44,21 @@ entries:
       url: /support.html
       output: web, pdf      
   
-  - title: Web Service Interface
-    url: /web-service-interface.html
+  - title: Web Services
     output: web, pdf
     folderitems:
+    - title:
+      url: /titlepage
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage
+      output: pdf
+      type: frontmatter
+        
+    - title: Web Service Interface
+      url: /web-service-interface.html
+      output: web, pdf
 #  - title: Release Notes
 #    output: web, pdf
 #    folderitems:
