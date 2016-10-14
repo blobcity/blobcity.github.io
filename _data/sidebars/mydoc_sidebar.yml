@@ -61,6 +61,26 @@ entries:
       url: /simple-search.html
       output: web, pdf
       
+  - title: CLI Interface
+    output: web, pdf
+    folderitems:
+        
+    - title: Telnet / CLI Interface
+      url: /telnet-cli-interface.html
+      output: web, pdf
+    - title: Authentication
+      url: /cli-authentication.html
+      output: web, pdf
+    - title: Commands
+      url: /commands.html
+      output: web, pdf
+    - title: Help
+      url: /cli-help.html
+      output: web, pdf
+    - title: Exit
+      url: /cli-exit.html
+      output: web, pdf
+      
 #  - title: Release Notes
 #    output: web, pdf
 #    folderitems:
