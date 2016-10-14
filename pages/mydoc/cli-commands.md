@@ -1,7 +1,7 @@
 ---
 title: Commands 
 sidebar: mydoc_sidebar
-permalink: cli-authentication.html
+permalink: cli-commands.html
 folder: mydoc
 ---
 

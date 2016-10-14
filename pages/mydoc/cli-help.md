@@ -1,7 +1,7 @@
 ---
 title: Help
 sidebar: mydoc_sidebar
-permalink: load-data.html
+permalink: cli-help.html
 folder: mydoc
 ---
 
