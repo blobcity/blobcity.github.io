@@ -43,11 +43,11 @@ entries:
     - title: Support
       url: /support.html
       output: web, pdf      
-      
-- title: Web Service Interface
-  url: /web-service-interface.html
-  output: web, pdf
-
+  
+  - title: Web Service Interface
+    url: /web-service-interface.html
+    output: web, pdf
+    folderitems:
 #  - title: Release Notes
 #    output: web, pdf
 #    folderitems:
