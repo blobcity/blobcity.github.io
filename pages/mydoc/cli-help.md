@@ -18,6 +18,7 @@ create-collection <collection-name>
 Simply typing help in the CLI interface, the format specification for all commands is displayed. This acts as a very quick reference for you to lookup all available commands and get a high level understanding of the parameter format for each command. The `. . .` put is simply a placeholder to indicate that the complete list is very long and avoided here for sake of brevity.
 
 In certain cases, when you are sure of the command you want to use, but want more information on usage of the command or the parameter format, you can specify the command code for that command as a parameter to the help command.
+
 ```
 blobcity>help create-ds
 Format: create-ds <ds-name>
