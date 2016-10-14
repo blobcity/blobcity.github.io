@@ -9,15 +9,16 @@ folder: mydoc
 
 Whether On-Cloud or On-Premise, the BlobCity Database can be fully used over a RESTful web service interface. Some of the language specific adapters themselves, communicate with the database over these REST interfaces. The REST support is very exhaustive and extends to every action that can be taken on the database.
 
-#Cloud Connection Endpoint
+##Cloud Connection Endpoint
 To connect to any cloud instance of BlobCity, the REST connection URL mentioned is
+
 ```
 http://{data-centre-id}.db.blobcity.com/rest/bquery
 ```
 
-The '{data-centre-id}' is the id of the data centre on which you are running your BlobCity instance. The id usually comprises of the major data centre provider code
-followed by the region code of the data centre. For connecting to AWS instance on US East (N. Virginia) the code would be aws-us-east-1 and the endpoint would be 'http://aws-
-us-east-1.db.blobcity.com/rest/bquery'
+The `{data-centre-id}` is the id of the data centre on which you are running your BlobCity instance. The id usually comprises of the major data centre provider code
+followed by the region code of the data centre. For connecting to AWS instance on US East (N. Virginia) the code would be aws-us-east-1 and the endpoint would be `http://aws-
+us-east-1.db.blobcity.com/rest/bquery`
 
 The complete list of upto date data centre codes can be found from the API details section on your cloud portal account. They are also mentioned in Appendix 3 for quick reference, but you should note that the list is ever changing, and the Appendix 3 may be outdated, by the time you are reading this.
 
