@@ -31,7 +31,7 @@ entries:
     - title: Introduction
       url: /introduction.html
       output: web, pdf
-
+    
 #    - title: Supported features
 #      url: /mydoc_supported_features.html
 #      output: web, pdf
@@ -42,8 +42,45 @@ entries:
 
     - title: Support
       url: /support.html
+      output: web, pdf      
+  
+  - title: Web Services
+    output: web, pdf
+    folderitems:
+        
+    - title: Web Service Interface
+      url: /web-service-interface.html
       output: web, pdf
-
+    - title: Insert Data
+      url: /insert-data.html
+      output: web, pdf
+    - title: Load Data
+      url: /load-data.html
+      output: web, pdf
+    - title: Simple Search
+      url: /simple-search.html
+      output: web, pdf
+      
+  - title: CLI Interface
+    output: web, pdf
+    folderitems:
+        
+    - title: Telnet / CLI Interface
+      url: /telnet-cli-interface.html
+      output: web, pdf
+    - title: Authentication
+      url: /cli-authentication.html
+      output: web, pdf
+    - title: Commands
+      url: /cli-commands.html
+      output: web, pdf
+    - title: Help
+      url: /cli-help.html
+      output: web, pdf
+    - title: Exit
+      url: /cli-exit.html
+      output: web, pdf
+      
 #  - title: Release Notes
 #    output: web, pdf
 #    folderitems:
