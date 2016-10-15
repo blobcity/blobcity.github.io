@@ -9,7 +9,7 @@ folder: mydoc
 
 On opening a successful TCP connection to the CLI service, entering valid authentication credentials is mandatory. The system will immediately prompt you to enter a username and corresponding password that you want to use to connect to the CLI. An example login with the `root` user account is shown below.
 
-```
+```bash
 telnet localhost 10113
 Trying ::1...
 Connected to localhost.

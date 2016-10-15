@@ -42,8 +42,22 @@ entries:
 
     - title: Support
       url: /support.html
-      output: web, pdf      
-  
+      output: web, pdf   
+      
+  - title: Getting Started
+    output: web, pdf
+    folderitems:
+        
+#    - title: Installing BlobCity
+#      url: /installing.html
+#      output: web, pdf
+    - title: Configuring BlobCity
+      url: /configuring.html
+      output: web, pdf
+#    - title: Client Drivers
+#      url: /drivers.html
+#      output: web, pdf
+      
   - title: Web Services
     output: web, pdf
     folderitems:
