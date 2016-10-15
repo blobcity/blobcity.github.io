@@ -47,7 +47,7 @@ Datastore successfully created
 
 A confirmation message is displayed if the command is successful in creating the datastore. Now that the datastore is created, a collection can be created within the datastore. The following command creates an `on-disk` collection within `ds1`.
 
-```shell
+```bash
 blobcity>create-collection ds1.collection1 on-disk
 Collection successfully created
 ```
