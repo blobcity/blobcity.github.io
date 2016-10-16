@@ -9,7 +9,6 @@ folder: mydoc
 
 Region | BlobCity Code
 --------|-----------|
-
 Amsterdam 01, The Netherlands  | ibm-ams01 
 Amsterdam 03, The Netherlands  | ibm-ams03 
 Chennai, India  | ibm-che01 
