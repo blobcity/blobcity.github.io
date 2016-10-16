@@ -95,12 +95,12 @@ entries:
       url: /cli-exit.html
       output: web, pdf
       
-- title: Data Center Availability
-  output: web, pdf
-  folderitems:
-   - title: Data Centers
-     url: /data-centers.html
-     output: web, pdf
+  - title: Data Center Availability
+    output: web, pdf
+    folderitems:
+    - title: Data Centers
+      url: /data-centers.html
+      output: web, pdf
       
 #  - title: Release Notes
 #    output: web, pdf
