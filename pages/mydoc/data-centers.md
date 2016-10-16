@@ -19,52 +19,36 @@ folder: mydoc
 </tr>
 </thead>
 <tbody>
-<tr>
-<td align="left" markdown="1">First column **fields**</td>
-<td align="left" markdown="1">Some descriptive text. This is a markdown link to [Google](http://google.com). Or see [some link][mydoc_tags].</td>
-</tr>
-<tr>
-<td align="left" markdown="1">Second column **fields**</td>
-<td align="left" markdown="1">Some more descriptive text. Here we have a Markdown-formatted list:
-
-* first item
-* second item
-* third item
-* Amsterdam 01, The Netherlands  | ibm-ams01 
-* Amsterdam 03, The Netherlands  | ibm-ams03 
-* Chennai, India  | ibm-che01 
-* Dallas 01, USA  | ibm-dal01 
-* Dallas 02, USA  | ibm-dal02 
-* Dallas 05, USA  | ibm-dal05 
-* Dallas 06, USA  | ibm-dal06 
-* Dallas 07, USA  | ibm-dal07 
-* Dallas 09, USA  | ibm-dal09 
-* Dallas 10, USA  | ibm-dal10 
-* Frankfurt, Germany  | ibm-fra02 
-* Hong Kong, China  | ibm-hkg02 
-* Houston, USA  | ibm-hou02 
-* London, England  | ibm-lon02 
-* Melbourne, Australia  | ibm-mel01 
-* Milan, Italy  | ibm-mil01 
-* Montreal, Canda  | ibm-mon01 
-* Paris, France  | ibm-par01 
-* Queretaro, Mexico  | ibm-mex01 
-* San Jose 01, USA  | ibm-sjc01 
-* San Jose 03, USA  | ibm-sjc03 
-* Sao Paulo, Brazil  | ibm-sea01 
-* Seattle, USA  | ibm-sea01 
-* Singapore  | ibm-sng01 
-* Sydney, Australia  | ibm-syd01 
-* Toronto, Canada  | ibm-tor01 
-* Washington D.C 01, USA  | ibm-wdc01 
-* Washington D.C 04, USA  | ibm-wdc04  
-</td>
-</tr>
+<tr><td>Amsterdam 01, The Netherlands </td><td>ibm-ams01 </td></tr>
+<tr><td>Amsterdam 03, The Netherlands </td><td>ibm-ams03 </td></tr>
+<tr><td>Chennai, India </td><td>ibm-che01 </td></tr>
+<tr><td>Dallas 01, USA </td><td>ibm-dal01 </td></tr>
+<tr><td>Dallas 02, USA </td><td>ibm-dal02 </td></tr>
+<tr><td>Dallas 05, USA </td><td>ibm-dal05 </td></tr>
+<tr><td>Dallas 06, USA </td><td>ibm-dal06 </td></tr>
+<tr><td>Dallas 07, USA </td><td>ibm-dal07 </td></tr>
+<tr><td>Dallas 09, USA </td><td>ibm-dal09 </td></tr>
+<tr><td>Dallas 10, USA </td><td>ibm-dal10 </td></tr>
+<tr><td>Frankfurt, Germany </td><td>ibm-fra02 </td></tr>
+<tr><td>Hong Kong, China </td><td>ibm-hkg02 </td></tr>
+<tr><td>Houston, USA </td><td>ibm-hou02 </td></tr>
+<tr><td>London, England </td><td>ibm-lon02 </td></tr>
+<tr><td>Melbourne, Australia </td><td>ibm-mel01 </td></tr>
+<tr><td>Milan, Italy </td><td>ibm-mil01 </td></tr>
+<tr><td>Montreal, Canda </td><td>ibm-mon01 </td></tr>
+<tr><td>Paris, France </td><td>ibm-par01 </td></tr>
+<tr><td>Queretaro, Mexico </td><td>ibm-mex01 </td></tr>
+<tr><td>San Jose 01, USA </td><td>ibm-sjc01 </td></tr>
+<tr><td>San Jose 03, USA </td><td>ibm-sjc03 </td></tr>
+<tr><td>Sao Paulo, Brazil </td><td>ibm-sea01 </td></tr>
+<tr><td>Seattle, USA </td><td>ibm-sea01 </td></tr>
+<tr><td>Singapore </td><td>ibm-sng01 </td></tr>
+<tr><td>Sydney, Australia </td><td>ibm-syd01 </td></tr>
+<tr><td>Toronto, Canada </td><td>ibm-tor01 </td></tr>
+<tr><td>Washington D.C 01, USA </td><td>ibm-wdc01 </td></tr>
+<tr><td>Washington D.C 04, USA </td><td>ibm-wdc04 </td></tr>
 </tbody>
 </table>
-
-Region | BlobCity Code
---------|-----------|
 
 
 {% include links.html %}
