@@ -25,6 +25,7 @@ All records corresponding to the specified `ids` are selected from the database.
 for those id’s.
 
 **Response Structure**
+
 ```
 {
   "ack" : "1",

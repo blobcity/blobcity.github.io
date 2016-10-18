@@ -32,11 +32,17 @@ The provide `data` object can be of any format. The new data record provided doe
 The save operation by default updates if a record with the specified `_id` is present, or else inserts. So if this operation is executed with an invalid `_id`, the operation will succeed by inserting a new record into the collection. This is the default behaviour and is not customisable to restrict inserts.
 
 **Incremental Updates**
-s
+
+```
 "p" : {
     "_id" : "record-id",
     "data" : {
       "col1" : "value1"
     }
     "overwrite" : false
+}
+```
+
+
+
 {% include links.html %}

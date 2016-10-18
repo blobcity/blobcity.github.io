@@ -74,6 +74,7 @@ If you wish to get the response in a homogeneous format on a table that contains
 The supported formats in the `as` clause are `json`, `xml`, `csv`, `text` and `sql`. In case of choosing sql, the data will be returned as `INSERT INTO` SQL queries corresponding to each record. When requesting data in `csv` format, the column names are mentioned as an additional parameter in the response. This is the case only if the requested columns are *. If requesting specific columns only, then the response columns will be in the order of the request as part of the `select` criteria.
 
 A sample response for `select *` with format `as csv` is mentioned below. The additional `cols` parameter provides the reading order for each of the CSV records in the result.
+
 ```
 {
   "ack" : "1",
