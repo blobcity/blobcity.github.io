@@ -9,8 +9,8 @@ folder: mydoc
 
 <table>
 <colgroup>
-<col width="70%" />
-<col width="30%" />
+<col width="320" />
+<col width="180" />
 </colgroup>
 <thead>
 <tr class="header">

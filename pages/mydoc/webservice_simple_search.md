@@ -1,7 +1,7 @@
 ---
 title: Simple Search
 sidebar: mydoc_sidebar
-permalink: simple-search.html
+permalink: webservice-simple-search.html
 folder: mydoc
 ---
 
@@ -37,6 +37,8 @@ The `select` parameter specifies the columns that are sought as response. A valu
 The `where` parameter defines the search condition. The search criterial is provided as an array of JSON objects. Each JSON object within the where clause maps to a condition on a single column. In the condition c indicates the name of column, v indicates the search value and x indicates the search operation. The list of supported search operations along with the specified operation code to be used as the x parameter is mentioned in the table below.
 
 The `association` parameter is optional and required when only more than one search condition is provided. It provides the linkage between the various search conditions. A value of `AND` means all conditions have to be satisfied for a record, for the record to be included in the search results. A value of `OR` means if either of the conditions is satisfied for a record, the record will be included in the search results. Only `AND` and `OR` are the two associations allowed at this point. If no association parameter is mentioned and multiple where conditions are passed, it will default to an `AND` operation.
+
+
 
 **Response Structure**
 
