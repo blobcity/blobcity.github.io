@@ -9,9 +9,9 @@ folder: mydoc
 
 <table>
 <colgroup>
-<col width="350" />
-<col width="180" />
-<col width="150" />
+<col width="300" />
+<col width="200" />
+<col width="200" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -56,9 +56,9 @@ folder: mydoc
 
 <table>
 <colgroup>
-<col width="350" />
-<col width="180" />
-<col width="150" />
+<col width="300" />
+<col width="200" />
+<col width="200" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -86,9 +86,9 @@ folder: mydoc
 
 <table>
 <colgroup>
-<col width="350" />
-<col width="180" />
-<col width="150" />
+<col width="300" />
+<col width="200" />
+<col width="200" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -110,9 +110,9 @@ folder: mydoc
 
 <table>
 <colgroup>
-<col width="350" />
-<col width="180" />
-<col width="150" />
+<col width="300" />
+<col width="200" />
+<col width="200" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -141,9 +141,9 @@ folder: mydoc
 
 <table>
 <colgroup>
-<col width="350" />
-<col width="180" />
-<col width="150" />
+<col width="300" />
+<col width="200" />
+<col width="200" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -193,9 +193,9 @@ folder: mydoc
 
 <table>
 <colgroup>
-<col width="350" />
-<col width="180" />
-<col width="150" />
+<col width="300" />
+<col width="200" />
+<col width="200" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -218,9 +218,9 @@ folder: mydoc
 
 <table>
 <colgroup>
-<col width="350" />
-<col width="180" />
-<col width="150" />
+<col width="300" />
+<col width="200" />
+<col width="200" />
 </colgroup>
 <thead>
 <tr class="header">
