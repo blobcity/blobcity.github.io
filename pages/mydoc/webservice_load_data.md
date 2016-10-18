@@ -1,7 +1,7 @@
 ---
 title: Load Data
 sidebar: mydoc_sidebar
-permalink: load-data.html
+permalink: webservice-load-data.html
 folder: mydoc
 ---
 

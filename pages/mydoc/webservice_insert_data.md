@@ -1,7 +1,7 @@
 ---
 title: Insert Data
 sidebar: mydoc_sidebar
-permalink: insert-data.html
+permalink: webservice-insert-data.html
 folder: mydoc
 ---
 

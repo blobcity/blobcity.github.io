@@ -1,7 +1,7 @@
 ---
 title: Web Service Interface
 sidebar: mydoc_sidebar
-permalink: web-service-interface.html
+permalink: webservice-interface.html
 folder: mydoc
 ---
 
