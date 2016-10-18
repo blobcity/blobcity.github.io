@@ -75,15 +75,8 @@ The supported formats in the `as` clause are `json`, `xml`, `csv`, `text` and `s
 
 A sample response for `select *` with format `as csv` is mentioned below. The additional `cols` parameter provides the reading order for each of the CSV records in the result.
 
-```json
-{
-  "ack" : "1",
-  "time" : 1000,
-  "p" : {
-    "data" : ["val1,val2,val3", "val4,val5,val6"],
-    "cols" : ["col1", "col2", "col3"]
-  }
-}
+```
+sds
 ```
 
 {% include links.html %}
