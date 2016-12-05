@@ -8,6 +8,7 @@ folder: mydoc
 ## Command Format
 
 All CLI requests start with a command code. The command code instructs the database of the operation the user wishes to perform as part of that request. Each support operation has a unique command code. An example command is shown below.
+
 ```
 blobcity>create-ds datastore1
 ```
