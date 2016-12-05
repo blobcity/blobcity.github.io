@@ -89,6 +89,39 @@ entries:
     - title: Saving or updating a record
       url: /webservice-saving-updating-record.html
       output: web, pdf
+    - title: Update Records
+      url: /webservice-update-record.html
+      output: web, pdf
+    - title: Create Datastore
+      url: /webservice-create-datastore.html
+      output: web, pdf
+    - title: Create Collection
+      url: /webservice-create-collection.html
+      output: web, pdf
+    - title: Drop Datastore
+      url: /webservice-drop-datastore.html
+      output: web, pdf
+    - title: Drop Collection
+      url: /webservice-drop-datastore.html
+      output: web, pdf
+    - title: Truncate Datastore
+      url: /webservice-truncate-datastore.html
+      output: web, pdf
+    - title: Drop Collection
+      url: /webservice-truncate-collection.html
+      output: web, pdf
+    - title: List Datastores
+      url: /webservice-list-datastores.html
+      output: web, pdf
+    - title: List Collections
+      url: /webservice-list-collections.html
+      output: web, pdf
+    - title: List Collections
+      url: /webservice-datastore-exists.html
+      output: web, pdf
+    - title: List Collections
+      url: /webservice-collection-exists.html
+      output: web, pdf
       
   - title: CLI Interface
     output: web, pdf

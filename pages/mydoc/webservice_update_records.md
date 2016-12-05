@@ -1,11 +1,11 @@
 ---
-title: Saving or updating a record
+title: Update Records
 sidebar: mydoc_sidebar
 permalink: webservice-update-record.html
 folder: mydoc
 ---
 
-## Update Operation
+## Update Records
 
 ```
 {

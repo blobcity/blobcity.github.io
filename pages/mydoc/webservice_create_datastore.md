@@ -26,7 +26,7 @@ The user must have the necessary permission to create a datastore for this opera
 
 ```
 {
-"ack" : "1",
+  "ack" : "1",
   "time" : 1000
 }
 ```
