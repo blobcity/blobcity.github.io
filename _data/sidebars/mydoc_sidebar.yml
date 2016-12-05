@@ -74,8 +74,20 @@ entries:
     - title: Simple Search
       url: /webservice-simple-search.html
       output: web, pdf
+    - title: SQL Execution
+      url: /webservice-sql-execution.html
+      output: web, pdf
+    - title: Simple Stored Procedure Execution
+      url: /webservice-simple-stored-procedure.html
+      output: web, pdf
+    - title: Filter Execution
+      url: /webservice-filter-execution.html
+      output: web, pdf
     - title: Delete Data
       url: /webservice-delete-data.html
+      output: web, pdf
+    - title: Saving or updating a record
+      url: /webservice-saving-updating-record.html
       output: web, pdf
       
   - title: CLI Interface

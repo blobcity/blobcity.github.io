@@ -94,7 +94,7 @@ Each success response has only an associated payload that contains information r
 {
   "ack" : "0",
   "code" : "error-code",
-  "message" : "error description message",
+  "message" : "error description message"
 }
 ```
 
