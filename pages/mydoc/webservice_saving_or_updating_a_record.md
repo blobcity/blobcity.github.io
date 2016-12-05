@@ -1,7 +1,7 @@
 ---
 title: Saving or updating a record
 sidebar: mydoc_sidebar
-permalink: saving-or-updating-a-record.html
+permalink: webservice-saving-or-updating-a-record.html
 folder: mydoc
 ---
 
