@@ -1,7 +1,7 @@
 ---
 title: Saving or updating a record
 sidebar: mydoc_sidebar
-permalink: saving-or-updating-a-record
+permalink: saving-or-updating-a-record.html
 folder: mydoc
 ---
 
