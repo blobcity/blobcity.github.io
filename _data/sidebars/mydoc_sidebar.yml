@@ -87,7 +87,7 @@ entries:
       url: /webservice-delete-data.html
       output: web, pdf
     - title: Saving or updating a record
-      url: /webservice-saving-updating-record.html
+      url: /webservice-saving-or-updating-a-record.html
       output: web, pdf
     - title: Update Records
       url: /webservice-update-record.html
