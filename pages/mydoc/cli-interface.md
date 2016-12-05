@@ -1,7 +1,7 @@
 ---
 title: Telnet / CLI Interface
 sidebar: mydoc_sidebar
-permalink: telnet-cli-interface.html
+permalink: cli-interface.html
 folder: mydoc
 ---
 
@@ -18,7 +18,7 @@ telnet {data-centre-id}.db.blobcity.com 10113
 
 The telnet command is available by default in Mac and Linux distributions and can be fired from the terminal / Xterm window. On a Windows operating system the telnet can be achieved via PuTTY. The PuTTY client is free and offers telnet and ssh capability over windows operating systems.
 
-The `{data-centre-id}` is the id of the data centre on which you are running your BlobCity instance. The id usually comprises of the major data centre provider code followed by the region code of the data centre. For connecting to AWS instance on US East (N. Virginia) the code would be `aws-us-east-1` and the endpoint would be `aws-us- east-1.db.blobcity.com`. The number `10113` is the port number on which the TCP based CLI service is running and needs to be specified. This is the default port for cloud and on-premise installations, and can be customised to a different suitable value for on- premise installations.
+The `{data-centre-id}` is the id of the data centre on which you are running your BlobCity instance. The id usually comprises of the major data centre provider code followed by the region code of the data centre. For connecting to AWS instance on US East (N. Virginia) the code would be `aws-us-east-1` and the endpoint would be `aws-us-east-1.db.blobcity.com`. The number `10113` is the port number on which the TCP based CLI service is running and needs to be specified. This is the default port for cloud and on-premise installations, and can be customised to a different suitable value for on- premise installations.
 
 The complete list of upto date data centre codes can be found from the API details section on your cloud portal account. They are also mentioned in Appendix 3 for quick reference, but you should note that the list is ever changing, and the Appendix 3 may be outdated, by the time you are reading this.
 
@@ -26,6 +26,7 @@ The complete list of upto date data centre codes can be found from the API detai
 The BlobCity CLI for on-premise installations can be accessed by default at
 
 `telnet localhost 10113`
+
 OR
 
 `telnet <ip> 10113`

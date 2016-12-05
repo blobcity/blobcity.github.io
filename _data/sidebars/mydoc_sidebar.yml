@@ -74,13 +74,16 @@ entries:
     - title: Simple Search
       url: /webservice-simple-search.html
       output: web, pdf
+    - title: Delete Data
+      url: /webservice-delete-data.html
+      output: web, pdf
       
   - title: CLI Interface
     output: web, pdf
     folderitems:
         
     - title: Telnet / CLI Interface
-      url: /telnet-cli-interface.html
+      url: /cli-interface.html
       output: web, pdf
     - title: Authentication
       url: /cli-authentication.html
