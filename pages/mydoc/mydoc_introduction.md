@@ -24,6 +24,14 @@ Unlike ATM’s not all systems need analytics at real-time. If you want to analy
 
 The BlobCity database is extremely well suited for such analytical requirements. The product is fully ACID compliant and supports high volume of transactions without compromising on analytics speeds. The technical term for such a product is HTAP (Hybrid Transaction / Analytical Processing)1, whereby products that do real-time analytics, need to be able to handle both transaction and analytical processing, in order to process the real-time data at real-time. BlobCity is a very mature HTAP space and used by several application developers as the only database for their applications, supporting both transactions and analytical workloads.
 
+## Naming Conventions
+
+Data inside BlobCity is collected into “datastore’s" and “collections”. A datastore is at the highest level in the storage system. It does not store any data, but it stores multiple collections within itself. There can be as many datastore as desired, but all uniquely named within a cluster. A collection is the equivalent of a database table. A collection is always placed inside a datastore, and is uniquely named within the datastore. Collection names can be repeated across datastore’s.
+
+In a real-life scenario, all data that corresponds to a single application, or single logical module, should be spread across collections inside a single datastore. That across collections can be collectively queried by using SQL JOIN queries that span across collections, just as they would across tables. A single query however cannot lookup data that is across datastore’s. A datastore is useful, when the same instance of the database is to be used for multiple applications, and a datastore is created for storing the data of each respective application.
+
+The rationale behind such naming, is got to do with BlobCity’s ability to take any and every kind of data. Calling it a database, or a table instead of datastore and collection, would be inappropriate as the terms “database” and “table” have very strongly defined meanings. BlobCity does much more than standard definitions of a database or table.
+
 ## High Level Features
 
 BlobCity is a NoSQL distributed horizontally, infinitesimally and linearly scalable database. It is fully ACID compliant and takes concurrent transactional and analytical workloads. It supports data sharding, distributed querying, data replication and automated failover management. The data formats supported are diverse including JSON, XML, CSV, SQL and Plain Text. One can inject data into it, by an explicit insert query, or ask the database to automatically pickup data by monitoring various supported data stores.

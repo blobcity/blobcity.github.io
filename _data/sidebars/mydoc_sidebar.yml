@@ -48,12 +48,19 @@ entries:
     output: web, pdf
     folderitems:
         
-#    - title: Installing BlobCity
-#      url: /installing.html
-#      output: web, pdf
+    - title: Starting an Instance
+      url: /starting-an-instance.html
+      output: web, pdf
     - title: Configuring BlobCity
       url: /configuring.html
-      output: web, pdf
+      output: web, pdf  
+    - title: Accessing Database over CLI
+      url: /accessing-database-over-cli.html
+      output: web, pdf  
+    - title: Create a Datastore and Collection
+      url: /create-a-datastore-and-collection.html
+      output: web, pdf  
+      
 #    - title: Client Drivers
 #      url: /drivers.html
 #      output: web, pdf
@@ -107,7 +114,7 @@ entries:
     - title: Truncate Datastore
       url: /webservice-truncate-datastore.html
       output: web, pdf
-    - title: Drop Collection
+    - title: Truncate Collection
       url: /webservice-truncate-collection.html
       output: web, pdf
     - title: List Datastores
@@ -116,11 +123,32 @@ entries:
     - title: List Collections
       url: /webservice-list-collections.html
       output: web, pdf
-    - title: List Collections
+    - title: Datastore Exists
       url: /webservice-datastore-exists.html
       output: web, pdf
-    - title: List Collections
+    - title: Collection Exists
       url: /webservice-collection-exists.html
+      output: web, pdf
+    - title: Add User
+      url: /webservice-add-user.html
+      output: web, pdf
+    - title: Drop User
+      url: /webservice-drop-user.html
+      output: web, pdf
+    - title: List Users
+      url: /webservice-list-users.html
+      output: web, pdf
+    - title: Change User Password
+      url: /webservice-change-user-password.html
+      output: web, pdf
+    - title: Apply License 
+      url: /webservice-apply-license.html
+      output: web, pdf
+    - title: Revoke License
+      url: /webservice-revoke-license.html
+      output: web, pdf
+    - title: View License
+      url: /webservice-view-license.html
       output: web, pdf
       
   - title: CLI Interface
