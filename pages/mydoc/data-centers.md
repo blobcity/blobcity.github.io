@@ -42,7 +42,7 @@ folder: mydoc
 <tr><td>Queretaro, Mexico </td><td>ibm-mex01 </td><td>Beta</td></tr>
 <tr><td>San Jose 01, USA </td><td>ibm-sjc01 </td><td>Beta</td></tr>
 <tr><td>San Jose 03, USA </td><td>ibm-sjc03 </td><td>Beta</td></tr>
-<tr><td>Sao Paulo, Brazil </td><td>ibm-sea01 </td><td>Beta</td></tr>
+<tr><td>Sao Paulo, Brazil </td><td>ibm-sao01 </td><td>Beta</td></tr>
 <tr><td>Seattle, USA </td><td>ibm-sea01 </td><td>Beta</td></tr>
 <tr><td>Singapore </td><td>ibm-sng01 </td><td>Beta</td></tr>
 <tr><td>Sydney, Australia </td><td>ibm-syd01 </td><td>Beta</td></tr>

@@ -51,9 +51,9 @@ entries:
     - title: Starting an Instance
       url: /starting-an-instance.html
       output: web, pdf
-    - title: Configuring BlobCity
-      url: /configuring.html
-      output: web, pdf  
+#    - title: Configuring BlobCity
+#      url: /configuring.html
+#      output: web, pdf  
     - title: Accessing Database over CLI
       url: /accessing-database-over-cli.html
       output: web, pdf  
