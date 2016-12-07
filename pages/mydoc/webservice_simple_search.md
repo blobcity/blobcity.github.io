@@ -38,7 +38,21 @@ The `where` parameter defines the search condition. The search criterial is prov
 
 The `association` parameter is optional and required when only more than one search condition is provided. It provides the linkage between the various search conditions. A value of `AND` means all conditions have to be satisfied for a record, for the record to be included in the search results. A value of `OR` means if either of the conditions is satisfied for a record, the record will be included in the search results. Only `AND` and `OR` are the two associations allowed at this point. If no association parameter is mentioned and multiple where conditions are passed, it will default to an `AND` operation.
 
+Supported search operations with corresponding codes for the ‘x’ parameter.
 
+Parameter Code | Description
+---------------|---------------|
+EQ | Column values equals the specified value 
+LT | Column value less than the specified value 
+GT | Column value greater than the specified value 
+LTEQ | Column value less than equals the specified value 
+GTEQ | Column value greater than equals the specified value 
+NEQ | Column value not equals the specified value 
+IN | Column value in the specified values 
+NOT-IN | Column value not in the specified values 
+BETWEEN | Column value between a specified range 
+NOT-BETWEEN | Column value not between a specified range 
+LIKE | Column value satisfying the specified regular expression 
 
 **Response Structure**
 
@@ -60,7 +74,7 @@ If only specific columns are requested, the default records will be modified to 
 
 If you wish to get the response in a homogeneous format on a table that contains heterogeneous data points, or wish to retrieve data in a format different from the format in which the data was inserted, the same can be done using an additional as parameter in the request payload. An example payload that forces all non JSON data to be converted to JSON and returned is mentioned below.
 
-```
+```json
 "p" : {
     "from" : ["collection-name"],
     "select" : ["*"],
