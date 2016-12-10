@@ -13,7 +13,7 @@ The BlobCity database is known for its speciality of being able to store and pro
 
 Data Type | Description
 ----------|----------|
-JSON | JSON is an open standard format that uses human-readable text to transmit data objects consistent of attribute-value pairs. http://www.json.org
+JSON | JSON is an open standard format that uses human-readable text to transmit data objects consistent of attribute-value pairs. [http://www.json.org](http://www.json.org)
 XML | Extensible Markup Language (XML) is a markup language that defines a set of rules for encoding documents in a format that is both humanly readable and machine readable. http://www.w3.org/XML/
 CSV | Comma-separated values (CSV) file stores tabular data (numbers and text) in plain text. Each line of the file is a data record. Each record consists of one or more fields, separated by commas. The use of the comma as a field separator is the source of the name for this file format. https://en.wikipedia.org/wiki/Comma-separated_values
 SQL | Structured Query Language (SQL) is a special purpose programming language designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). https://en.wikipedia.org/wiki/SQL
