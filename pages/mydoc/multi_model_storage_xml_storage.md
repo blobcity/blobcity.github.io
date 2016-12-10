@@ -13,6 +13,12 @@ A schema inference engine processes the XML document or object being submitted t
 
 Let us consider starting with an empty collection and then insert our first XML document into it. An empty collection is shown in figure below.
 
+**Empty table with a single _id (primary key) column**
+
+| _id |
+|-----|
+|     |
+
 Consider an insert of the following XML document into our table.
 
 ```xml
@@ -81,6 +87,59 @@ xxx | John | 45
 xxx | Tom | 26
 1000 | Mary | 30
 
+## Nested XML’s
 
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<user>
+<name>Stacy</name>
+    <age>43</age>
+    <addr>
+        <line1>line1</line1>
+        <line2></line2>
+        <state>IL</state>
+        <zip>60002</zip>
+    </addr>
+</user>
+```
+
+**Collection post insertion of a nested XML**
+
+| _id | user.name | user.age | user.addr | user.addr.line1 | user.addr.line2 | user.addr.state |  user.addr.zip |
+|------|------|------|------|------|------|------|------|
+| xxx | John | 45 |  
+| xxx | Tom | 26 | 
+| 1000 | Mary | 30 |
+| xxx | Stacy | 43 | line1 | IL | 60002 |
+
+Four new columns are added into the table. These columns are added under a sub-column of `user.addr`. While `user.addr` is not an actual column that store data, while `user.addr.line1`, `user.addr.line2`, `user.addr.state`, `user.addr.zip` are actual columns, the column `user.addr` can be queried only in select queries to select all of the nested columns.
+
+The created columns will remain in the schema unless explicitly deleted, even if the record for Stacy is deleted.
+
+## No root tag
+
+While XML documents by general convention have a root tag, the same can be skipped when inserting an XML into BlobCity. The database supports interpretation of XML documents that have an XML like structure without a root tag present. The root tag in the XML that we used so far has been the `<user></user>` tag.
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<name>Stacy</name>
+<age>43</age>
+<addr>
+    <line1>line1</line1>
+    <line2></line2>
+    <state>IL</state>
+    <zip>60002</zip>
+</addr>
+```
+
+| _id | name | age | addr.line1 | addr.line2 | addr.state |  addr.zip |
+|------|------|------|------|------|------|------|
+| xxx | Stacy | 43 | line1 |  | IL | 60002 |
+
+When the above XML is inserted a new empty table, the columns created are not under the user root tag as were previously. It is important to note that the structure of this table is exactly same as the table created by inserting an equivalent JSON object.
+
+## Arrays in XML
+
+When XML documents have a tag that is repeated, depending on the position of the tag, the inference engine consider occurrence of the tag as separate records, or a collection field within a single record. If the root tag is repeated, and no other tag occurs at the root level, then each root tag and its contents are treated as a separate record. If sub-tags are repeated, or a tag at the root level is repeated, but there are other tags other than the repeated tag at the root level, then contents of each repeated tag are collected into the single column as a collection field.
 
 {% include links.html %}
