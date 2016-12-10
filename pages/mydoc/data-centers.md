@@ -22,8 +22,8 @@ folder: mydoc
 </thead>
 <tbody>
 <tr><td>Amsterdam 01, The Netherlands </td><td>ibm-ams01 </td><td>Beta</td></tr>
-<tr><td>Amsterdam 03, The Netherlands </td><td>ibm-ams03 </td><td>Coming Soon</td></tr>
-<tr><td>Chennai, India </td><td>ibm-che01 </td><td>Beta</td></tr>
+<tr><td>Amsterdam 03, The Netherlands </td><td>ibm-ams03 </td><td>Beta</td></tr>
+<tr><td>Chennai, India </td><td>ibm-che01 </td><td>Coming Soon</td></tr>
 <tr><td>Dallas 01, USA </td><td>ibm-dal01 </td><td>Beta</td></tr>
 <tr><td>Dallas 02, USA </td><td>ibm-dal02 </td><td>Beta</td></tr>
 <tr><td>Dallas 05, USA </td><td>ibm-dal05 </td><td>Beta</td></tr>
