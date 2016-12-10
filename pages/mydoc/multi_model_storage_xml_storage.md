@@ -25,7 +25,7 @@ Consider an insert of the following XML document into our table.
 
 The collection after taking the insert of the above XML appears as shown below.
 
-**Collection with the 1st XML record inserted
+**Collection with the 1st XML record inserted**
 
 _id | user.name | user.age
 ----|----|----|
@@ -53,7 +53,7 @@ The root tag and the XML format specification tag is not mandatory for BlobCity 
 </user>
 ```
 
-**Collection with a 2nd XML record inserted
+**Collection with a 2nd XML record inserted**
 
 _id | user.name | user.age
 ----|----|----|
@@ -73,7 +73,7 @@ To explicitly specify the `_id` value for any element, the following XML structu
 </user>
 ```
 
-**Collection with 3rd XML record having an explicitly specified _id value
+**Collection with 3rd XML record having an explicitly specified _id value**
 
 _id | user.name | user.age
 ----|----|----|

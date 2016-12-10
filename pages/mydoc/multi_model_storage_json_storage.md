@@ -25,7 +25,7 @@ Consider the insert of the below mentioned JSON record
 ```
 The collection after insert of the single JSON record looks as mentioned below.
 
-**Collection with 1st JSON record inserted
+**Collection with 1st JSON record inserted**
 
 _id | name | age
 ----|----|----|
@@ -40,7 +40,7 @@ It is interesting to note that two new columns got added into the table on succe
 }
 ```
 
-**Collection with a2nd JSON record inserted
+**Collection with a2nd JSON record inserted**
 
 _id | name | age
 ----|----|----|
