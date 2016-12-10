@@ -40,7 +40,7 @@ It is interesting to note that two new columns got added into the table on succe
 }
 ```
 
-**Collection with a2nd JSON record inserted**
+**Collection with 2nd JSON record inserted**
 
 _id | name | age
 ----|----|----|
@@ -51,7 +51,7 @@ Each record is automatically provided an `_id` value is that acts as primary key
 
 An insert of a JSON object with an explicitly specified `_id` value and the corresponding entry added into the table is shown below.
 
-**Collection with 3rd JSON record having an explicitly specified _id value
+**Collection with 3rd JSON record having an explicitly specified _id value**
 
 ```
 {
