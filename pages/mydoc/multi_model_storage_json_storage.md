@@ -16,10 +16,12 @@ When a JSON is imported, the keys get mapped to the column name. If a column wit
 Let us consider starting with an empty table and then inserted our first JSON record into it.
 
 An empty table looks as represented below:
+
 **Empty table with a single _id (primary key) column**
 
-_id |
-----|----|
+| _id |
+|-----|
+|    |
 
 Consider the insert of the below mentioned JSON record
 
