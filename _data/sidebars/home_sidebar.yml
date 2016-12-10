@@ -76,6 +76,9 @@ entries:
     - title: XML Storage
       url: /multi-model-storage-xml.html
       output: web, pdf
+    - title: CSV Storage
+      url: /multi-model-storage-csv.html
+      output: web, pdf
       
   - title: Web Services
     output: web, pdf
