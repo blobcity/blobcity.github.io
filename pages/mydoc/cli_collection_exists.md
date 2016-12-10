@@ -1,7 +1,7 @@
 ---
 title: Collection Exists
 sidebar: mydoc_sidebar
-permalink: cli-list-datastores.html
+permalink: cli-collection-exists.html
 folder: mydoc
 ---
 
