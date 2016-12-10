@@ -1,7 +1,7 @@
 ---
 title: Datastore Exists
 sidebar: mydoc_sidebar
-permalink: cli-datastore-exists.html
+permalink: cli-datastore-exist.html
 folder: mydoc
 ---
 

@@ -210,7 +210,7 @@ entries:
       url: /cli-list-collections.html
       output: web, pdf
     - title: Datastore Exists
-      url: /cli-datastore-exists.html
+      url: /cli-datastore-exist.html
       output: web, pdf
     - title: Collection Exists
       url: /cli-collection-exists.html
