@@ -337,7 +337,7 @@ So far we say arrays of primitive data types inside a JSON object. Let us look a
 
 | _id | name | open | close | food.name | food.price | 
 |-----|------|------|-------|-----------|------------|
-| xxx | A's Kitchen | 11:00 am | 01:00 am | Waffles 5.95 <br/><br/> French Toast 4.50 <br/><br/> Breakfast 6.95
+| xxx | A's Kitchen | 11:00 am | 01:00 am | Waffles <br/><br/> French Toast <br/><br/> Breakfast | 5.95 <br/><br/> 4.50 <br/><br/> 6.95
 
 It is interesting to see that the insert of such a JSON, seemingly created a sub collection of `food` within the record for `A’s Kitchen` restaurant. It is important to note the food.name and food.price column actually contain 3 sub records for the one primary records. This makes food a complete sub collection within the primary collection, and can be operated on as an independent collection. However because the primary key of `_id` is associated only with the primary collection, the records in the sub collection are strongly associated
 with the records of the primary collection. The capabilities of such a sub collection can be seen by the SELECT queries that can be fired on such sub collections.
