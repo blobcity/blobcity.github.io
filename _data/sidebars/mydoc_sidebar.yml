@@ -70,7 +70,7 @@ entries:
     - title: Using BlobCity with diverse data models
       url: /multi-model-storage.html
       output: web, pdf
-    - title: Multi-Model Storage
+    - title: JSON Storage
       url: /multi-model-storage-json.html
       output: web, pdf
     - title: XML Storage

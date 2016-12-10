@@ -74,6 +74,7 @@ To explicitly specify the `_id` value for any element, the following XML structu
 ```
 
 **Collection with 3rd XML record having an explicitly specified _id value
+
 _id | user.name | user.age
 ----|----|----|
 xxx | John | 45
