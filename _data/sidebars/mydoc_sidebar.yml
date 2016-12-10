@@ -64,6 +64,12 @@ entries:
 #    - title: Client Drivers
 #      url: /drivers.html
 #      output: web, pdf
+  - title: Multi-Model Storage
+    output: web, pdf
+    folderitems:
+    - title: Using BlobCity with diverse data models
+      url: /multi-model-storage.html
+      output: web, pdf
       
   - title: Web Services
     output: web, pdf
