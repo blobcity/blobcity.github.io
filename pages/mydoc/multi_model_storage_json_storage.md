@@ -13,7 +13,13 @@ A schema inference engine, infers the schema of the JSON object. The inferred da
 
 When a JSON is imported, the keys get mapped to the column name. If a column with the same name is already presented in the collection, the value of that key is added as a value into that column. A new column with the key name is created if one is not already provided. Any level of JSON nesting is permitted, with nested JSON columns being named by concatenating names of nested keys separated by a ‘.’ (dot) separator between the key names.
 
-Let us consider starting with an empty table and then inserted our first JSON record into it. 
+Let us consider starting with an empty table and then inserted our first JSON record into it.
+
+An empty table looks as represented below:
+**Empty table with a single _id (primary key) column**
+
+_id |
+----|----|
 
 Consider the insert of the below mentioned JSON record
 
