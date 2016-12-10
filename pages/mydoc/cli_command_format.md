@@ -1,7 +1,7 @@
 ---
-title: Commands 
+title: Command Format 
 sidebar: mydoc_sidebar
-permalink: cli-commands.html
+permalink: cli-command-format.html
 folder: mydoc
 ---
 

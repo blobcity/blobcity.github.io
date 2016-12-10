@@ -76,9 +76,9 @@ entries:
     - title: XML Storage
       url: /multi-model-storage-xml.html
       output: web, pdf
-    - title: CSV Storage
-      url: /multi-model-storage-csv.html
-      output: web, pdf
+    #- title: CSV Storage
+    #  url: /multi-model-storage-csv.html
+    #  output: web, pdf
       
   - title: Web Services
     output: web, pdf
@@ -176,14 +176,86 @@ entries:
     - title: Authentication
       url: /cli-authentication.html
       output: web, pdf
-    - title: Commands
-      url: /cli-commands.html
+    - title: Command Format
+      url: /cli-command-format.html
       output: web, pdf
     - title: Help
       url: /cli-help.html
       output: web, pdf
     - title: Exit
       url: /cli-exit.html
+      output: web, pdf
+    - title: Create Datastore
+      url: /cli-create-datastore.html
+      output: web, pdf
+    - title: Create Collection
+      url: /cli-create-collection.html
+      output: web, pdf
+    - title: Drop Datastore
+      url: /cli-drop-datastore.html
+      output: web, pdf
+    - title: Drop Collection
+      url: /cli-drop-collection.html
+      output: web, pdf
+    - title: Truncate Datastore
+      url: /cli-truncate-datastore.html
+      output: web, pdf
+    - title: Truncate Collection
+      url: /cli-truncate-collection.html
+      output: web, pdf
+    - title: List Datastores
+      url: /cli-list-datastores.html
+      output: web, pdf
+    - title: List Collections
+      url: /cli-list-collections.html
+      output: web, pdf
+    - title: Datastore Exists
+      url: /cli-datastore-exists.html
+      output: web, pdf
+    - title: Collection Exists
+      url: /cli-collection-exists.html
+      output: web, pdf
+    - title: SQL Execution
+      url: /cli-sql-execution.html
+      output: web, pdf
+    - title: Load Code
+      url: /cli-load-code.html
+      output: web, pdf
+    - title: Start Watch Service
+      url: /cli-start-watch-service.html
+      output: web, pdf
+    - title: Stop Watch Service
+      url: /cli-stop-watch-service.html
+      output: web, pdf
+    - title: List Watch Services
+      url: /cli-list-watch-services.html
+      output: web, pdf
+    - title: Add User
+      url: /cli-add-user.html
+      output: web, pdf
+    - title: Drop User
+      url: /cli-drop-user.html
+      output: web, pdf
+    - title: List Users
+      url: /cli-list-users.html
+      output: web, pdf
+    - title: Change User Password
+      url: /cli-change-user-password.html
+      output: web, pdf
+    - title: Apply License 
+      url: /cli-apply-license.html
+      output: web, pdf
+    - title: Revoke License
+      url: /cli-revoke-license.html
+      output: web, pdf
+    - title: View License
+      url: /cli-view-license.html
+      output: web, pdf
+    - title: View Cluster
+      url: /cli-view-cluster.html
+      output: web, pdf
+    - title: View Node
+      url: /cli-view-node.html
       output: web, pdf
       
   - title: Data Center Availability
