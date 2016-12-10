@@ -6,19 +6,6 @@ entries:
   version: 
   folders:
 
-  - title:
-    output: pdf
-    type: frontmatter
-    folderitems:
-    - title:
-      url: /titlepage
-      output: pdf
-      type: frontmatter
-    - title:
-      url: /tocpage
-      output: pdf
-      type: frontmatter
-
   - title: Overview
     output: web, pdf
     folderitems:
