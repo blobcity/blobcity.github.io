@@ -21,7 +21,6 @@ An empty table looks as represented below:
 
 | _id |
 |-----|
-|    |
 
 Consider the insert of the below mentioned JSON record
 
@@ -68,5 +67,29 @@ An insert of a JSON object with an explicitly specified `_id` value and the corr
   "age" : 30
 }
 ```
+
+##Nested JSON’s
+
+```
+{
+  "name" : "Stacy",
+  "age" : 43,
+  "addr" : {
+    "line1" : "line1",
+    "line2" : "",
+    "state" : "IL",
+    "zip" : "60002"
+  } 
+}
+```
+
+The above JSON contains a nested JSON mapped to the key `addr`(address) .The above JSON when inserted on our table, creates additional fields for each of the sub-elements present within the `addr` JSON. The additional column are automatically produced. The new table looks as below.
+
+| _id | name | age | addr.line1 | addr.line2 | addr.state | addr.zip | 
+|-----|------|-----|------------|------------|------------|----------|
+| xxx | John | 45 | 
+|xxx | Tom | 26 |
+|1000 | Mary | 30 |
+| xxx | Stacy | 43 | line1 | IL | 60002 |
 
 {% include links.html %}
