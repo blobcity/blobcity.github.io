@@ -13,8 +13,11 @@ Whether On-Cloud or On-Premise, the BlobCity Database can be fully used her an o
 To connect to any cloud instance of BlobCity, the CLI connection can be opened using telnet in the manner shown below.
 
 ```
-telnet {data-centre-id}.db.blobcity.com 10113
+telnet dbcli.blobcity.com 10113
+telnet {data-centre-id}.dbcli.blobcity.com 10113
 ```
+
+You can use dbcli.blobcity.com to use our automatic routing to the best performing data centre. If you need to specify an explicit data centre then you can use the {data-centre-id}.dbcli.blobcity.com variant.
 
 The telnet command is available by default in Mac and Linux distributions and can be fired from the terminal / Xterm window. On a Windows operating system the telnet can be achieved via PuTTY. The PuTTY client is free and offers telnet and ssh capability over windows operating systems.
 

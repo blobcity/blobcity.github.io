@@ -257,7 +257,14 @@ entries:
     - title: View Node
       url: /cli-view-node.html
       output: web, pdf
-      
+
+  - title: FTP Service
+    output: web, pdf
+    folderitems:
+    - title: FTP Service
+      url: /ftp-service.html
+      output: web, pdf
+
   - title: Data Center Availability
     output: web, pdf
     folderitems:
