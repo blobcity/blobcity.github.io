@@ -13,8 +13,11 @@ Whether On-Cloud or On-Premise, the BlobCity Database can be fully used over a R
 To connect to any cloud instance of BlobCity, the REST connection URL mentioned is
 
 ```
-http://{data-centre-id}.db.blobcity.com/rest/bquery
+https://db.blobcity.com/rest/bquery
+https://{data-centre-id}.db.blobcity.com/rest/bquery
 ```
+
+You can use db.blobcity.com to use our automatic routing to the best performing data centre. If you need to specify an explicit data centre then you can use the {data-centre-id}.db.blobcity.com variant.
 
 The `{data-centre-id}` is the id of the data centre on which you are running your BlobCity instance. The id usually comprises of the major data centre provider code
 followed by the region code of the data centre. For connecting to AWS instance on US East (N. Virginia) the code would be aws-us-east-1 and the endpoint would be `http://aws-us-east-1.db.blobcity.com/rest/bquery`
