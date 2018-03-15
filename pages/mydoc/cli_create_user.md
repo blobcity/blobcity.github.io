@@ -1,14 +1,14 @@
 ---
-title: Add User
+title: Create User
 sidebar: mydoc_sidebar
-permalink: cli-add-user.html
+permalink: cli-create-user.html
 folder: mydoc
 ---
 
-## Add User
+## Create User
 
 ```
-blobcity>add-user {username} {password}
+blobcity>create-user {username} {password}
 ```
 
 Creates the specified user account in the database, if the username is not already allotted to another user. The username is specified by the `{username}` parameter and the password that the user will use to login is specified by the `{password}` parameter. The username needs to comply with the username specification standard to not include any special characters. Only alphanumeric values with ‘-‘ and ‘_’ characters is allowed.

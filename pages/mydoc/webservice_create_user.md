@@ -1,17 +1,17 @@
 ---
-title: Add User
+title: Create User
 sidebar: mydoc_sidebar
-permalink: webservice-add-user.html
+permalink: webservice-create-user.html
 folder: mydoc
 ---
 
-## Add User
+## Create User
 
 ```json
 {
   "username" : "root",
   "password" : "root",
-  "q" : "add-user",
+  "q" : "create-user",
   "p" : {
     "username" : "username1",
     "password" : "password1"
@@ -30,7 +30,7 @@ This command is restricted on hosted cloud instance of the product. Cloud users 
 ```
 {
 "ack" : "1",
-  "time" : 1000
+"time" : 1000
 }
 ```
 
