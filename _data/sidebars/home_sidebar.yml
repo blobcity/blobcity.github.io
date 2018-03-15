@@ -144,7 +144,7 @@ entries:
     - title: Collection Exists
       url: /webservice-collection-exists.html
       output: web, pdf
-    - title: Add User
+    - title: Create User
       url: /webservice-add-user.html
       output: web, pdf
     - title: Drop User
@@ -230,8 +230,8 @@ entries:
     - title: List Watch Services
       url: /cli-list-watch-services.html
       output: web, pdf
-    - title: Add User
-      url: /cli-add-user.html
+    - title: Create User
+      url: /cli-create-user.html
       output: web, pdf
     - title: Drop User
       url: /cli-drop-user.html
