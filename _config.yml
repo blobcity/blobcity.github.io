@@ -11,6 +11,21 @@ site_title: BlobCity DB
 company_name: BlobCity
 # this appears in the footer
 
+plugins:
+  - jekyll-seo-tag
+  
+title: BlobCity Documentation
+
+description: 
+
+social:
+  name: BlobCity
+  links:
+    - https://twitter.com/blobcity
+    - https://www.facebook.com/blobcity
+    - https://www.linkedin.com/company/blobcity
+    - https://meetup.com/pro/blobcity
+  
 github_editme_path: 
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
@@ -26,6 +41,7 @@ port: 4005
 exclude:
   - .idea/
   - .gitignore
+  - .DS_Store
 # these are the files and directories that jekyll will exclude from the build
 
 feedback_subject_line: BlobCity Documentation
