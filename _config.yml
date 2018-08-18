@@ -11,6 +11,9 @@ site_title: BlobCity DB
 company_name: BlobCity
 # this appears in the footer
 
+# Google services
+google_analytics: UA-37234307-1
+
 plugins:
   - jekyll-seo-tag
   
